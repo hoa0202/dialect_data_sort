@@ -2,7 +2,7 @@ import os, json
 import matplotlib.pyplot as plt
 import collections
 
-speakerId_and_academicBackground = []
+speakerId_and_healthCondition = []
 
 #for curDir, dirs, files in os.walk("./충청,전라,제주/"):
 for curDir, dirs, files in os.walk("./강원,경상/"):
@@ -13,14 +13,14 @@ for curDir, dirs, files in os.walk("./강원,경상/"):
                 json_data = json.load(json2)
                 for speakerInfo in json_data["speaker"]:
                     speakerId = speakerInfo["speakerId"]
-                    academicBackground = speakerInfo["academicBackground"]
-                    if academicBackground == None :
+                    healthCondition = speakerInfo["healthCondition"]
+                    if healthCondition == None :
                         print("null")
                     # print(file_path)
-                    speakerId_and_academicBackground.append([speakerId, academicBackground])
+                    speakerId_and_healthCondition.append([speakerId, healthCondition])
 
 #print(dict(speakerId_and_residencePeriod))
-a = dict(speakerId_and_academicBackground)
+a = dict(speakerId_and_healthCondition)
 print(collections.Counter(a.values()))
 d1 = sorted(collections.Counter(a.values()).items())
 print(d1)
