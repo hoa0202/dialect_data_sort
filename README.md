@@ -1,5 +1,5 @@
 # dialect_data_sort
-#
+
 # emotions
 # intents
 # domain
