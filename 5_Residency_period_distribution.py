@@ -4,7 +4,8 @@ import collections
 
 speakerId_and_residencePeriod = []
 
-for curDir, dirs, files in os.walk("./2-018/충청,전라,제주"):
+#for curDir, dirs, files in os.walk("./충청,전라,제주/"):
+for curDir, dirs, files in os.walk("./강원,경상/"):
     for f in files:
         file_path = os.path.join(curDir, f)
         if file_path[-4:] == "json":
