@@ -1,3 +1,2 @@
 # dialect_data_sort
-# add 7,8.py
-# test.
+# add 6, 7,8.py
