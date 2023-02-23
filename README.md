@@ -1,2 +1,14 @@
 # dialect_data_sort
-# add 6, 7,8.py
+#
+# emotions
+# intents
+# domain
+# record duration
+# residenceperiod
+# job
+# academicbackground
+# healthcondition
+# gender
+# birthyear
+# residence
+# speechtype
